@@ -1,6 +1,4 @@
 ﻿using Autofac;
-using DataHelper;
-
 namespace DataHelper
 {
     public static class ContainerConfig
@@ -14,11 +12,12 @@ namespace DataHelper
             builder.RegisterType<AssignmentAPIHelper>().As<IAssignmentAPIHelper>();
             builder.RegisterType<AssignmentExcelHelper>().As<IAssignmentExcelHelper>();
             builder.RegisterType<CustomerAPIDataHelper>().As<ICustomerAPIHelper>();
-            builder.RegisterType<ExcelDataHelper>().As<IExcelDataHelper>();
             builder.RegisterType<RestApiHelper>().As<IRestAPIHelper>();
-            builder.RegisterType<SQLHelper>().As<ISQLHelper>();
-            builder.RegisterType<MySQLHelper>().As<IMySQLHelper>();
-            builder.RegisterType<TextFileHelper>().As<ITextFileHelper>();
+
+            //builder.RegisterType<ExcelDataHelper>().As<IExcelDataHelper>();
+            //builder.RegisterType<SQLHelper>().As<ISQLHelper>();
+            //builder.RegisterType<MySQLHelper>().As<IMySQLHelper>();
+            //builder.RegisterType<TextFileHelper>().As<ITextFileHelper>();
 
             return builder.Build();
         }

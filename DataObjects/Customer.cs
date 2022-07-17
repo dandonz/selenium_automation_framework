@@ -1,6 +1,7 @@
 ﻿using System;
 namespace DataObjects
 {
+    //https://json2csharp.com/
     public class Customer
     {
         public string customerid { get; set; }
