@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <Page name="NavBar">
+        <element name="loginLnk" value ="LOG IN" />
+        <element name="logoutLnk" value ="LOG OUT" />
+        <element name="scheduleLnk" value ="Schedule" />
+        <element name="customerLnk" value ="Customers" />
+        <element name="cleanerLnk" value ="Cleaners" />
+        <element name="assignmentLnk" value ="Assignment" />
+    </Page>
+    <Page name="Home">
+        <product name="Product1" />
+        <product name="Product2" />
+    </Page>
+    <Page name="Login">
+        <product name="Product1" />
+        <product name="Product2" />
+    </Page>
+    <Page name="Customer">
+        <product name="Product1" />
+        <product name="Product2" />
+    </Page>
+</root>
