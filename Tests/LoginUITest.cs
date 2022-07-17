@@ -28,8 +28,8 @@ namespace Tests
             HomePage homePage = new HomePage(driver);
             homePage.ClickLoginLink();
             LoginPage loginPage = new LoginPage(driver);
-            loginPage.EnterEmail("dand.ngoc@gmail.com");
-            loginPage.EnterPassword("PassSec2019!");
+            loginPage.EnterEmail("");
+            loginPage.EnterPassword("");
             loginPage.ClickSubmit();
             string loggedUserName = homePage.GetLoggedUserName();
             Assert.AreEqual(loggedUserName, "LOG OUT");
